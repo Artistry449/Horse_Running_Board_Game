@@ -28,4 +28,12 @@ public class Path {
     public int getLength() {
         return length;
     }
+
+    public Player getPlayer(int playerID) {
+        return playerList.get(playerID);
+    }
+
+    public List<Player> getPlayers() {
+        return this.playerList;
+    }
 }
