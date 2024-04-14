@@ -2,9 +2,12 @@ package Backend;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class GameEngine {
     public static void start(int pathLength, int playerNum) {
+
+        Scanner scanner = new Scanner(System.in);
         Path path = new Path(pathLength, playerNum);
         Shagai shagai = new Shagai();
 
@@ -12,23 +15,44 @@ public class GameEngine {
 
         int wonPlayersNum = 0;
         for (; wonPlayersNum < playerNum;) {
-            System.out.println("Player 1 шагай буулгана уу");
-            shagai.rollShagai();
-            System.out.println("Буусан тоо: " + shagai.getShagaiShape());
 
-            path.changePlayerPosition(1, shagai.getShagaiShape());
-            System.out.println("Player 1-ийн байгаа байрлал: " + path.getPlayerPosition(1));
+            for (int i = 0; i < playerNum; i++) {
+                System.out.println("Player " + (i + 1) + " шагай буулгана уу");
+                System.out.println("Шагайгаа буулгах бол (ROLL), тоглоомыг болиулах бол өөр тэмдэгт дарна уу");
+                String userChoice = scanner.nextLine();
 
-            if (path.getPlayerPosition(1) >= path.getLength()) {
+                if (userChoice.equals("ROLL")) {
+                    shagai.rollShagai();
+                } else {
+                    System.out.println("Тоглогч " + i + " тоглолтыг дуусгалаа");
 
-            }
-            if (wonPlayersList.size() >= playerNum) {
-                System.out.println("Тоглоом дууслаа!");
+                    return;
+                }
+                System.out.println("Буусан тоо: " + shagai.getShagaiShape());
 
-                for (int i = 0; i < wonPlayersList.size(); i++) {
-                    // System.out.println(i + "-р байр: " + wonPlayersList.);
+                path.changePlayerPosition(i, shagai.getShagaiShape());
+                System.out.println("Player " + (i + 1) + "-ийн байгаа байрлал: " + path.getPlayerPosition(i));
+
+                if (path.getPlayerPosition(i) >= path.getLength()) {
+                    System.out.println("Player " + i + " түрүүллээ!");
+                    break;
+                }
+                if (wonPlayersList.size() >= playerNum) {
+                    System.out.println("Тоглоом дууслаа!");
+
+                    System.out.println("Тоглогчдын байр:");
+
+                    for (int j = 0; j < wonPlayersList.size(); j++) {
+                        System.out.println(j + "-р байр: " + wonPlayersList.get(j));
+                    }
                 }
             }
+
+            for (int i = 0; i < playerNum; i++) {
+                System.out.println("Тоглогч " + (i + 1) + "-ийн байгаа байршил: " + path.getPlayerPosition(i));
+            }
+
         }
+        // return 0;
     }
 }

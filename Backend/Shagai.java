@@ -8,7 +8,7 @@ public class Shagai {
     }
 
     public void rollShagai() {
-        int rand = (int) (Math.random() * 4) + 1;
+        int rand = (int) (Math.random() * 4) + 0;
 
         this.shape = rand;
     }
