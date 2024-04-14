@@ -9,7 +9,8 @@
             "name": "App",
             "request": "launch",
             "mainClass": "UI.App",
-            "projectName": "Horse_Running_Board_Game_da66ca45"
+            "projectName": "Horse_Running_Board_Game_da66ca45",
+            "vmArgs": "--module-path \"/Users/enkhbayarganbold/Downloads/javafx-sdk-22/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -27,7 +28,7 @@
         },
         {
             "type": "java",
-            "name": "Welcome",
+            "name": "WelcomeController",
             "request": "launch",
             "mainClass": "UI.Welcome",
             "projectName": "Horse_Running_Board_Game_da66ca45",

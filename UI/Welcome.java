@@ -6,20 +6,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class App extends Application {
+public class Welcome extends Application {
 
     @Override
     public void start(Stage primaryStage) {
         try {
-            // Load the FXML file
-            Parent root = FXMLLoader.load(getClass().getResource("WelcomeScene.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("Welcome.fxml"));
 
-            // Set the scene to the stage and configure the title
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.setTitle("Welcome Screen");
 
-            // Show the stage
             primaryStage.show();
         } catch (Exception e) {
             e.printStackTrace();
@@ -27,6 +24,6 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        launch(args); // Launch the JavaFX application
+        launch(args);
     }
 }
