@@ -5,11 +5,11 @@ public class Player {
     private int position = 0;
     private boolean isOrohBaria = false;
     private boolean isBariandOrohShown = false;
+    Shagai shagai = new Shagai();
 
     public Player(int id) {
         this.id = id;
 
-        Shagai shagai = new Shagai();
     }
 
     public int getID() {
@@ -34,5 +34,9 @@ public class Player {
 
     public boolean isShownBariandOrloo() {
         return isBariandOrohShown;
+    }
+
+    public int rollShagai() {
+        return shagai.rollShagai();
     }
 }

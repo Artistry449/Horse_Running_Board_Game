@@ -8,7 +8,6 @@ public class serverMain {
         Scanner sc = new Scanner(System.in);
 
         String userChoice = "";
-        int whoEndedGame = 0;
 
         for (;;) {
 
@@ -30,12 +29,5 @@ public class serverMain {
                 break;
             }
         }
-
-        // if (whoEndedGame == 0) {
-        // System.out.println("Тоглолт дууслаа!");
-        // } else {
-        // System.out.println("Тоглолтыг " + whoEndedGame + "-р тоглогч дуусгалаа.");
-        // }
-
     }
 }

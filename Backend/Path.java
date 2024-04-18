@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Path {
     private int length = 0;
-    private int flagPosition = 0;
+    // private int flagPosition = 0;
 
     List<Player> playerList = new ArrayList<Player>();
 
