@@ -1,9 +1,8 @@
 package Backend;
 
-import java.util.Hashtable;
 import java.util.Random;
 
-public class Shagai {
+public class Shagai implements Shagai_Inter {
     private int shape;
 
     private Random random = new Random();
@@ -29,9 +28,9 @@ public class Shagai {
 
         if (roll <= 12) {
             return "хонь";
-        } else if (roll <= 24) {
+        } else if (roll <= 24 && roll > 12) {
             return "ямаа";
-        } else if (roll <= 1) {
+        } else if (roll <= 36 && roll > 24) {
             return "тэмээ";
         } else {
             return "морь"; // mori buuh magadlal ni hamgiin baga baihaar hiiv.

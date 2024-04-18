@@ -3,7 +3,7 @@ package Backend;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Path {
+public class Path implements Path_Inter {
     private int length = 0;
     // private int flagPosition = 0;
 

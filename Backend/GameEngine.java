@@ -4,8 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class GameEngine {
+public class GameEngine implements GameEngine_Inter {
+
+    public void displayPlayerScore(int playerID, int playerPosition) {
+        // for (int i = 0; i < playerNum; i++) {
+        System.out.println(" Тоглогч " + (playerID) + "-ийн байгаа байршил: " +
+                playerPosition);
+        // }
+    }
+
     public static void start(int pathLength, int playerNum) {
+
+        GameEngine engine = new GameEngine();
 
         Scanner scanner = new Scanner(System.in);
         Path path = new Path(pathLength, playerNum);
@@ -76,7 +86,9 @@ public class GameEngine {
 
             System.out.println("\n-------------Үзүүлэлт--------------");
             for (int i = 0; i < playerNum; i++) {
-                System.out.println("  Тоглогч " + (i + 1) + "-ийн байгаа байршил: " + path.getPlayerPosition(i));
+                // System.out.println(" Тоглогч " + (i + 1) + "-ийн байгаа байршил: " +
+                // path.getPlayerPosition(i));
+                engine.displayPlayerScore(i + 1, path.getPlayerPosition(i));
             }
             System.out.println("-----------------------------------\n");
         }

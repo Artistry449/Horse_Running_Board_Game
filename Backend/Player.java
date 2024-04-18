@@ -1,6 +1,6 @@
 package Backend;
 
-public class Player {
+public class Player implements Player_Inter {
     private int id;
     private int position = 0;
     private boolean isOrohBaria = false;

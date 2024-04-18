@@ -2,10 +2,18 @@ package Backend;
 
 import java.util.Scanner;
 
-public class serverMain {
+public class serverMain implements server_Inter {
+
+    public String getCaption() {
+        return "Horse Running Board Game";
+    }
+
     public static void main(String[] args) {
+        serverMain server = new serverMain();
         Scanner scanner = new Scanner(System.in);
         Scanner sc = new Scanner(System.in);
+
+        System.out.println("\n~~~~~~~~~~~~~" + server.getCaption() + "-д тавтай морил!~~~~~~~~~~~~~\n");
 
         int playerNum = 0;
         for (; playerNum < 2 || playerNum > 4;) {
