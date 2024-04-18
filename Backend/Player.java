@@ -36,7 +36,7 @@ public class Player {
         return isBariandOrohShown;
     }
 
-    public int rollShagai() {
+    public String rollShagai() {
         return shagai.rollShagai();
     }
 }

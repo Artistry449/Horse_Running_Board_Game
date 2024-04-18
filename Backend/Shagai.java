@@ -12,7 +12,7 @@ public class Shagai {
 
     }
 
-    public int rollShagai() {
+    public String rollShagai() {
         // int rand = (int) (Math.random() * 4) + 0;
 
         // this.shape = rand;
@@ -28,13 +28,13 @@ public class Shagai {
         int roll = random.nextInt(40) + 1;
 
         if (roll <= 12) {
-            return 0;
+            return "хонь";
         } else if (roll <= 24) {
-            return 1;
+            return "ямаа";
         } else if (roll <= 36) {
-            return 2;
+            return "тэмээ";
         } else {
-            return 3; // mori buuh magadlal ni hamgiin baga baihaar hiiv.
+            return "морь"; // mori buuh magadlal ni hamgiin baga baihaar hiiv.
         }
     }
 

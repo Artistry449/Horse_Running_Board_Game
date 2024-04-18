@@ -13,8 +13,9 @@ public class GameEngine {
 
         List<Player> wonPlayersList = new ArrayList<Player>();
 
-        while (wonPlayersList.size() != path.getPlayers().size()) {
+        int ahihNud = 0;
 
+        while (wonPlayersList.size() != path.getPlayers().size()) {
             for (int i = 0; i < path.getPlayers().size(); i++) {
 
                 if (!path.getPlayer(i).isOrohBaria()) {
@@ -23,17 +24,28 @@ public class GameEngine {
                     System.out.println("Шагайгаа буулгах бол (ROLL), тоглоомыг болиулах бол өөр тэмдэгт дарна уу");
                     String userChoice = scanner.nextLine();
 
-                    if (userChoice.equals("ROLL")) {
-                        shagai.rollShagai();
-                    } else {
-                        System.out.println("Тоглогч " + i + " тоглолтыг дуусгалаа");
+                    if (userChoice.equals("roll")) {
+                        // shagai.rollShagai();
+                        System.out.print("\033[H\033[2J");
+                        System.out.print("**Player " + (i + 1) + "-д ");
+                        for (int k = 0; k < 4; k++) {
+                            String buusanShagai = shagai.rollShagai();
+                            ahihNud += buusanShagai.equals("морь") ? 1 : 0;
 
+                            System.out.print(buusanShagai + " ");
+                        }
+                        System.out.print(" буулаа");
+                    } else {
+                        System.out.println("\nPlayer " + i + " тоглолтыг дуусгалаа");
                         return;
                     }
-                    System.out.println("Буусан тоо: " + shagai.getShagaiShape());
+                    // System.out.println("Буусан тоо: " + shagai.getShagaiShape());
 
-                    path.changePlayerPosition(i, shagai.getShagaiShape());
-                    System.out.println("Player " + (i + 1) + "-ийн байгаа байрлал: " + path.getPlayerPosition(i));
+                    path.changePlayerPosition(i, ahihNud);
+
+                    System.out.println("\n---(Player " + (i + 1) + ") " + ahihNud + " нүд ахилаа.");
+                    System.out.println(
+                            "---(Player " + (i + 1) + ")-ийн байгаа байрлал: " + path.getPlayerPosition(i) + "\n");
 
                     if (path.getPlayerPosition(i) >= path.getLength()) {
 
@@ -56,12 +68,14 @@ public class GameEngine {
                         return;
                     }
                 }
-
+                ahihNud = 0;
             }
 
+            System.out.println("\n-------------Үзүүлэлт--------------");
             for (int i = 0; i < playerNum; i++) {
-                System.out.println("Тоглогч " + (i + 1) + "-ийн байгаа байршил: " + path.getPlayerPosition(i));
+                System.out.println("  Тоглогч " + (i + 1) + "-ийн байгаа байршил: " + path.getPlayerPosition(i));
             }
+            System.out.println("-----------------------------------\n");
         }
         // return 0;
     }
