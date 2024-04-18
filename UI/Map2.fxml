@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Map2Controller">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Arc fx:id="player1" fill="#1f93ff00" length="90.0" onMouseClicked="#moveImage" radiusX="150.0" radiusY="150.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Arc fx:id="player2" fill="#1f93ff00" layoutX="1500.0" layoutY="-1.0" length="90.0" onMouseClicked="#moveImage" radiusX="150.0" radiusY="150.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Arc fx:id="player4" fill="#1f93ff00" layoutX="1500.0" layoutY="900.0" length="90.0" onMouseClicked="#moveImage" radiusX="150.0" radiusY="150.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Arc fx:id="player3" fill="#1f93ff00" layoutY="900.0" length="90.0" onMouseClicked="#moveImage" radiusX="150.0" radiusY="150.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Pane layoutX="111.0" layoutY="115.0" prefHeight="670.0" prefWidth="1277.0">
+               <children>
+                  <Rectangle fx:id="number1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="179.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="294.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="409.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="524.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="639.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="754.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="869.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="984.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="984.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="984.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="984.0" layoutY="225.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="984.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number13" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="869.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number14" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="754.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number15" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="639.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number16" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="524.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number17" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="409.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number18" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="294.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number19" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="179.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number20" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="179.0" layoutY="375.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number21" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="179.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number22" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="179.0" layoutY="525.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number30" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="984.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number29" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="869.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number28" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="754.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number27" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="639.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number26" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="524.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number25" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="409.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number24" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="294.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <Rectangle fx:id="number23" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="179.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="115.0" />
+                  <ImageView fx:id="horse1" fitHeight="35.0" fitWidth="55.0" layoutX="179.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="horse2" fitHeight="35.0" fitWidth="55.0" layoutX="179.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="horse3" fitHeight="35.0" fitWidth="55.0" layoutX="237.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="horse4" fitHeight="35.0" fitWidth="55.0" layoutX="239.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Text fx:id="player1Text" fill="TRANSPARENT" layoutX="14.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Black">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="player2Text" fill="TRANSPARENT" layoutX="1399.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="player3Text" fill="TRANSPARENT" layoutX="14.0" layoutY="854.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yellow">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="player4Text" fill="TRANSPARENT" layoutX="1392.0" layoutY="854.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pink">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

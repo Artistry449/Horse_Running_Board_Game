@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Map1Controller">
+  <children>
+    <AnchorPane prefHeight="600.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Arc fx:id="player1" fill="#1f93ff00" length="90.0" onMouseClicked="#moveImage" radiusX="150.0" radiusY="150.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Arc fx:id="player2" fill="#1f93ff00" layoutX="1500.0" layoutY="-1.0" length="90.0" onMouseClicked="#moveImage" radiusX="150.0" radiusY="150.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Arc fx:id="player4" fill="#1f93ff00" layoutX="1500.0" layoutY="900.0" length="90.0" onMouseClicked="#moveImage" radiusX="150.0" radiusY="150.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Arc fx:id="player3" fill="#1f93ff00" layoutY="900.0" length="90.0" onMouseClicked="#moveImage" radiusX="150.0" radiusY="150.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Pane layoutX="138.0" layoutY="138.0" prefHeight="623.0" prefWidth="1223.0">
+               <children>
+                  <Rectangle fx:id="number5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="687.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="537.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="837.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="987.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="987.0" layoutY="162.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="987.0" layoutY="262.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="987.0" layoutY="362.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="987.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="837.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number13" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="687.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number14" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="537.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number15" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="387.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number16" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="237.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number17" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="87.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number18" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="87.0" layoutY="362.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number19" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="87.0" layoutY="262.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number20" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="87.0" layoutY="162.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="87.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="237.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <Rectangle fx:id="number3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="387.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                  <ImageView fx:id="horse1" fitHeight="50.0" fitWidth="75.0" layoutX="89.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="horse2" fitHeight="50.0" fitWidth="75.0" layoutX="89.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="horse4" fitHeight="50.0" fitWidth="75.0" layoutX="162.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="horse3" fitHeight="50.0" fitWidth="75.0" layoutX="162.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Text fx:id="player1Text" fill="TRANSPARENT" layoutX="14.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Black">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="player2Text" fill="TRANSPARENT" layoutX="1399.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="player3Text" fill="TRANSPARENT" layoutX="14.0" layoutY="854.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yellow">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="player4Text" fill="TRANSPARENT" layoutX="1392.0" layoutY="854.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pink">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
