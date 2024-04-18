@@ -31,7 +31,7 @@ public class Shagai {
             return "хонь";
         } else if (roll <= 24) {
             return "ямаа";
-        } else if (roll <= 36) {
+        } else if (roll <= 1) {
             return "тэмээ";
         } else {
             return "морь"; // mori buuh magadlal ni hamgiin baga baihaar hiiv.

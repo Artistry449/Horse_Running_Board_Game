@@ -56,15 +56,18 @@ public class GameEngine {
                         }
 
                     }
-                    if (wonPlayersList.size() >= playerNum) {
+                    // wonPlayersList.size() == playerNum ||
+                    if (wonPlayersList.size() == playerNum - 1) {
                         System.out.println("Тоглоом дууслаа!");
 
-                        System.out.println("Тоглогчдын байр:");
+                        System.out.println("\nТоглогчдын байр:");
 
                         System.out.println();
                         for (int j = 0; j < wonPlayersList.size(); j++) {
                             System.out.println((j + 1) + "-р байр: " + wonPlayersList.get(j).getID() + "-р тоглогч");
                         }
+                        System.out.println((wonPlayersList.size() + 1) + "-р байр: " + path.playerList.get(0).getID()
+                                + "-р тоглогч");
                         return;
                     }
                 }
