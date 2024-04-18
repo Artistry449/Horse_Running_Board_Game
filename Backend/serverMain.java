@@ -9,6 +9,7 @@ public class serverMain implements server_Inter {
     }
 
     public static void main(String[] args) {
+        GameEngine gameEngine = new GameEngine();
         serverMain server = new serverMain();
         Scanner scanner = new Scanner(System.in);
         Scanner sc = new Scanner(System.in);
@@ -54,7 +55,7 @@ public class serverMain implements server_Inter {
 
         if (userChoice.equals("y")) {
             // whoEndedGame = GameEngine.start(pathLength, playerNum);
-            GameEngine.start(pathLength, playerNum);
+            gameEngine.start(pathLength, playerNum);
         } else {
             System.out.println("\n~~Тоглоомоос гарлаа~~");
             scanner.close();

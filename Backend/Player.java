@@ -9,7 +9,6 @@ public class Player implements Player_Inter {
 
     public Player(int id) {
         this.id = id;
-
     }
 
     public int getID() {

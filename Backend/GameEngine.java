@@ -13,7 +13,7 @@ public class GameEngine implements GameEngine_Inter {
         // }
     }
 
-    public static void start(int pathLength, int playerNum) {
+    public void start(int pathLength, int playerNum) {
 
         GameEngine engine = new GameEngine();
 
@@ -31,7 +31,7 @@ public class GameEngine implements GameEngine_Inter {
                 if (!path.getPlayer(i).isOrohBaria()) {
 
                     System.out.println("Player " + (i + 1) + " шагай буулгана уу");
-                    System.out.println("Шагайгаа буулгах бол (ROLL), тоглоомыг болиулах бол өөр тэмдэгт дарна уу");
+                    System.out.println("Шагайгаа буулгах бол (roll), тоглоомыг болиулах бол өөр тэмдэгт дарна уу");
                     String userChoice = scanner.nextLine();
 
                     if (userChoice.equals("roll")) {
